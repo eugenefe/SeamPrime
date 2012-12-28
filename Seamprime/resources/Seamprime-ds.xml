@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources xmlns="http://www.jboss.org/ironjacamar/schema">
+    <datasource 
+        jndi-name="SeamprimeDatasource"
+        enabled="true" 
+        use-java-context="true" pool-name="SeamprimeDatasource_pool">
+        <connection-url>jdbc:oracle:thin:@192.11.14.54:1521:orcl</connection-url>
+        <driver>ojdbc6.jar</driver>
+        <security>
+		      <user-name>F1</user-name>
+		      <password>1234</password>
+        </security>
+    </datasource>
+</datasources>
