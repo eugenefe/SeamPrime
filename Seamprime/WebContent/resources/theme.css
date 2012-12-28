@@ -237,3 +237,11 @@ table.radio input[type=radio] {
 .takion_background {
 	background-image: url(../img/header.jpg);
 }
+.ui-layout-doc {
+	height: 100px;
+}
+.faces-layout-fix {
+      display: table;
+      height: 100%;
+      width: 100%;
+   }

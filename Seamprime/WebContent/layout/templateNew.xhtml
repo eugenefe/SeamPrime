@@ -14,9 +14,30 @@
 		<ui:insert name="head" />
 	</h:head>
 	<h:body>
-		<ui:insert name ="body">
-		</ui:insert>
-		<!-- <ui:include src="/layout/pageLayout.xhtml" /> -->
+		<h:form >
+		<p:layout style= " height: 600px;">
+			<!-- <p:layoutUnit position="north" size="40px" gutter="0">
+				<h:outputText value="Top unit content." />
+				<ui:include src="menu.xhtml">
+			<ui:param name="projectName" value="PrimeSeamOracle" />
+		</ui:include>
+			</p:layoutUnit> -->
+			<p:layoutUnit position="west" header="Left" collapsible="true" resizable="true" closable="true"
+				size="100">  
+        		Left  
+    		</p:layoutUnit>
+			<p:layoutUnit position="east" size="200" header="Right" resizable="true" closable="true"
+				collapsible="true" effect="drop">
+				<h:outputText value="Right unit content." />
+			</p:layoutUnit>
+			<p:layoutUnit position="center" header="Center" resizable="true">
+				<ui:insert name="body" />
+			</p:layoutUnit>
+			<p:layoutUnit position="south" resizable="true" collapsible="true">
+				<ui:include src="/layout/footer.xhtml" />
+			</p:layoutUnit>
+		</p:layout>
+		</h:form>
 	</h:body>
 	</h:html>
 </f:view>
