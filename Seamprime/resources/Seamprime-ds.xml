@@ -4,11 +4,17 @@
         jndi-name="SeamprimeDatasource"
         enabled="true" 
         use-java-context="true" pool-name="SeamprimeDatasource_pool">
-        <connection-url>jdbc:oracle:thin:@192.11.14.54:1521:orcl</connection-url>
+        <!-- <connection-url>jdbc:oracle:thin:@192.11.14.54:1521:orcl</connection-url>
         <driver>ojdbc6.jar</driver>
         <security>
 		      <user-name>F1</user-name>
 		      <password>1234</password>
+        </security> -->
+        <connection-url>jdbc:mysql://mysql5.hosting.paran.com:3306/takion77_db</connection-url>
+        <driver>mysql-connector-java-5.1.22-bin.jar</driver>
+        <security>
+		      <user-name>takion77</user-name>
+		      <password>dull6078</password>
         </security>
     </datasource>
 </datasources>
