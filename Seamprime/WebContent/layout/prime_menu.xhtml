@@ -1,0 +1,22 @@
+<p:toolbar height="40px" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core" xmlns:s="http://jboss.org/schema/seam/taglib"
+	xmlns:p="http://primefaces.org/ui"
+	rendered="false" >
+	<p:toolbarGroup align="left">
+		<s:link id="menuHomeId" view="/home.xhtml" value="Home" propagation="none" />
+		<p:separator />
+		<s:link id="primeHomeId" view="/pageLayout.xhtml" value="Prime" propagation="none" />
+		<p:separator />
+		<s:link id="templateId" view="/layout/templateNew.xhtml" value="TemplateNew" propagation="none" />
+	</p:toolbarGroup>
+	<p:toolbarGroup align="right">
+		<p:commandButton type="push" value="New" image="ui-icon-document" />
+		<p:commandButton type="push" value="Open" image="ui-icon-folder-open" />
+		<p:separator />
+		<p:commandButton type="push" title="Save" image="ui-icon-disk" />
+		<p:commandButton type="push" title="Delete" image="ui-icon-trash" />
+		<p:commandButton type="push" title="Print" image="ui-icon-print" />
+	</p:toolbarGroup>
+</p:toolbar>
+

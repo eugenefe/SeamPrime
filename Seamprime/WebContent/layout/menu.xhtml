@@ -4,11 +4,13 @@
     xmlns:h="http://java.sun.com/jsf/html"
     xmlns:f="http://java.sun.com/jsf/core"
     xmlns:s="http://jboss.org/schema/seam/taglib"
-    xmlns:rich="http://richfaces.org/rich">
-    <rich:toolbarGroup>
+    xmlns:rich="http://richfaces.org/rich"
+    height ="40px" >
+    <rich:toolbarGroup >
         <h:outputText value="#{projectName}:"/>
         <s:link id="menuHomeId" view="/home.xhtml" value="Home" propagation="none"/>
         <s:link id="menuHomeNewId" view="/view/homeNew.xhtml" value="HomeNew" propagation="none"/>
+        <s:link id="menuPrimeHomeId" view="/view/primehome.xhtml" value="PrimeHome" propagation="none"/>
     </rich:toolbarGroup>
     <!-- @newMenuItem@ -->
     <rich:toolbarGroup location="right">

@@ -9,6 +9,12 @@
     xmlns:p="http://primefaces.org/ui"
     template="/layout/templateNew.xhtml">
 
+    <ui:define name="head">
+    	<ui:include src="/layout/header.xhtml" />
+    	<ui:include src="/layout/menu.xhtml">
+    		<ui:param name="projectName" value="Seamprime"/>
+    	</ui:include>
+    </ui:define>
     <ui:define name="body">
 
         <h1>Welcome to Seam!</h1>
